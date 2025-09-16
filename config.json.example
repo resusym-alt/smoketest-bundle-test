@@ -1,0 +1,46 @@
+{
+  "env": "test",
+  "domain": {
+    "test": {
+      "base": "test-domain.com",
+      "pay": "pay.test-domain.com",
+      "bot": "bot.test-domain.com",
+      "notify": "notify.test-domain.com",
+      "cancel": "cancel.test-domain.com"
+    },
+    "prod": {
+      "base": "your-domain.com",
+      "pay": "pay.your-domain.com",
+      "bot": "bot.your-domain.com",
+      "notify": "notify.your-domain.com",
+      "cancel": "cancel.your-domain.com"
+    }
+  },
+  "stripe": {
+    "mode": "test",
+    "secret_key": "sk_test_YOUR_KEY",
+    "webhook_secret": "whsec_YOUR_SECRET",
+    "price_standard": "price_test_standard",
+    "price_premium": "price_test_premium"
+  },
+  "supabase": {
+    "url": "https://test-project.supabase.co",
+    "service_role_key": "YOUR_TEST_SUPABASE_SERVICE_ROLE_KEY"
+  },
+  "line": {
+    "channel_access_token": "LINE_TEST_ACCESS_TOKEN",
+    "channel_secret": "LINE_TEST_SECRET",
+    "liff_subscribe_id": "LIFF_ID_TEST_SUBSCRIBE",
+    "liff_cancel_id": "LIFF_ID_TEST_CANCEL"
+  },
+  "slack": {
+    "incoming_webhook_url": "https://hooks.slack.com/services/TEST/XXX/YYY"
+  },
+  "storage": {
+    "provider": "s3",
+    "region": "ap-northeast-1",
+    "bucket": "shurokun-forms-test",
+    "access_key_id": "YOUR_TEST_AWS_KEY",
+    "secret_access_key": "YOUR_TEST_AWS_SECRET"
+  }
+}
